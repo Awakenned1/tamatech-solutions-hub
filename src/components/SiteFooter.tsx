@@ -30,8 +30,12 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row gap-2 justify-between text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} TamaTech Business Solutions. All rights reserved.</p>
-          <p>Designed & engineered in-house.</p>
+          <p>© {new Date().getFullYear()} TamaTech Business Solutions · Reg: 2024/652550/07</p>
+          <p>
+            <a href="mailto:tamatechnology8@gmail.com" className="hover:text-foreground">tamatechnology8@gmail.com</a>
+            <span className="mx-2">·</span>
+            <a href="tel:+27694419361" className="hover:text-foreground">+27 69 441 9361</a>
+          </p>
         </div>
       </div>
     </footer>
