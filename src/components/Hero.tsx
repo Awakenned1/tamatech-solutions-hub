@@ -60,8 +60,8 @@ export function Hero() {
           </div>
 
           <div className="lg:col-span-5 relative hidden lg:block">
-            <div className="relative aspect-square rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-elevated p-10 flex items-center justify-center">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-accent opacity-20 blur-2xl" />
+            <div className="relative aspect-square rounded-3xl bg-white border border-white/20 shadow-elevated p-10 flex items-center justify-center">
+              <div className="absolute -inset-2 rounded-3xl bg-gradient-accent opacity-20 blur-2xl -z-10" />
               <img
                 src={logo}
                 alt="TamaTech Business Solutions logo"
