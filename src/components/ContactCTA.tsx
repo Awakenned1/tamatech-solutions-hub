@@ -7,7 +7,7 @@ const COMPANY_DETAILS = [
   { icon: Building2, label: "Company", value: "TamaTech Business Solutions" },
   { icon: FileBadge2, label: "Registration", value: "2024/652550/07" },
   { icon: Hash, label: "Tax Number", value: "9166327289" },
-  { icon: MapPin, label: "Address", value: "21 St Mitchell Street, Port Shepstone, 4240" },
+  { icon: MapPin, label: "Address", value: "Sandtot Wendywood, Gauteng" },
   { icon: Phone, label: "Phone", value: "+27 69 441 9361", href: "tel:+27694419361" },
   { icon: Mail, label: "Email", value: "tamatechnology8@gmail.com", href: "mailto:tamatechnology8@gmail.com" },
 ];
