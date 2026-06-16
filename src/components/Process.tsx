@@ -1,8 +1,24 @@
 const steps = [
-  { n: "01", title: "Discovery", desc: "We map your goals, regulatory scope, and current systems." },
-  { n: "02", title: "Blueprint", desc: "A clear plan — scope, timeline, deliverables, fixed pricing." },
-  { n: "03", title: "Build & File", desc: "Engineers ship code while our compliance team files paperwork." },
-  { n: "04", title: "Launch & Maintain", desc: "Go live with monitoring, support, and renewals handled." },
+  {
+    n: "01",
+    title: "Business Registration",
+    desc: "We handle end-to-end company registration — incorporation, licensing, and all statutory documentation so you're legally ready to trade.",
+  },
+  {
+    n: "02",
+    title: "Compliance",
+    desc: "Stay audit-ready from day one. We set up the policies, filings, and ongoing regulatory monitoring your business needs to stay clean.",
+  },
+  {
+    n: "03",
+    title: "Software",
+    desc: "With your foundation in place, we build the custom software, tools, and automations that power your operations and drive growth.",
+  },
+  {
+    n: "04",
+    title: "Marketing",
+    desc: "We amplify your presence — brand identity, digital marketing, and go-to-market strategy to put your business in front of the right audience.",
+  },
 ];
 
 export function Process() {
@@ -14,8 +30,8 @@ export function Process() {
             How we work
           </span>
           <h2 className="mt-4 font-display text-4xl md:text-5xl font-bold">
-            A predictable path from{" "}
-            <span className="text-gradient-brand">idea to in-market</span>.
+            From registered to{" "}
+            <span className="text-gradient-brand">fully operational</span>.
           </h2>
         </div>
 

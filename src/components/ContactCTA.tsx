@@ -1,15 +1,13 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Mail, Phone, MapPin, Building2, FileBadge2, Hash, Loader2, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, Building2, Loader2, CheckCircle2 } from "lucide-react";
 import { EMAILJS_CONFIG } from "@/lib/emailjs-config";
 
 const COMPANY_DETAILS = [
   { icon: Building2, label: "Company", value: "TamaTech Business Solutions" },
-  { icon: FileBadge2, label: "Registration", value: "2024/652550/07" },
-  { icon: Hash, label: "Tax Number", value: "9166327289" },
-  { icon: MapPin, label: "Address", value: "Sandtot Wendywood, Gauteng" },
+  { icon: MapPin, label: "Address", value: "Sandton Wendywood, Gauteng" },
   { icon: Phone, label: "Phone", value: "+27 69 441 9361", href: "tel:+27694419361" },
-  { icon: Mail, label: "Email", value: "tamatechnology8@gmail.com", href: "mailto:tamatechnology8@gmail.com" },
+  { icon: Mail, label: "Email", value: "info@tamatech.co.za", href: "mailto:info@tamatech.co.za" },
 ];
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -66,14 +64,14 @@ export function ContactCTA() {
     } catch (err) {
       console.error("EmailJS error:", err);
       setStatus("error");
-      setErrorMsg("Could not send right now. Please email us directly at tamatechnology8@gmail.com.");
+      setErrorMsg("Could not send right now. Please email us directly at info@tamatech.co.za.");
     }
   }
 
   return (
-    <section id="contact" className="relative py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="relative overflow-hidden rounded-[2rem] bg-gradient-hero text-primary-foreground p-8 md:p-14 shadow-elevated">
+    <section id="contact" className="relative py-16 md:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="relative overflow-hidden rounded-2xl md:rounded-[2rem] bg-gradient-hero text-primary-foreground p-6 sm:p-8 md:p-14 shadow-elevated">
           <div className="absolute inset-0 grid-pattern opacity-30" />
           <div className="absolute -top-32 -right-32 h-80 w-80 rounded-full bg-brand-teal/25 blur-3xl" />
           <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-brand-sky/30 blur-3xl" />

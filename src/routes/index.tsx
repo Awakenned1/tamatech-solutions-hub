@@ -32,8 +32,8 @@ function Index() {
       <SiteHeader />
       <main>
         <Hero />
-        <ServicesBento />
         <WhyUs />
+        <ServicesBento />
         <Process />
         <ContactCTA />
       </main>

@@ -1,79 +1,90 @@
-import logo from "@/assets/tamatech-logo.png";
+import tamaBot from "@/assets/TamaTech Bot.png";
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-gradient-hero text-primary-foreground pt-32 pb-24 md:pt-40 md:pb-32"
+      className="relative bg-gradient-hero text-primary-foreground"
     >
-      <div className="absolute inset-0 grid-pattern opacity-40" />
-      <div className="absolute inset-0 bg-gradient-mesh" />
-      <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-brand-teal/20 blur-3xl animate-float" />
-      <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-brand-sky/30 blur-3xl" />
+      {/* Background decorations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 grid-pattern opacity-20" />
+        <div className="absolute inset-0 bg-gradient-mesh" />
+        <div className="absolute top-0 left-0 h-[600px] w-[600px] rounded-full bg-brand-sky/15 blur-3xl -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-brand-teal/10 blur-3xl translate-x-1/3 translate-y-1/3" />
+      </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.2em] backdrop-blur">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand-teal animate-pulse" />
-              Software · Compliance · Registration
+      {/* Main content */}
+      <div className="relative z-10 w-full mx-auto max-w-7xl px-5 sm:px-8 lg:px-16 pt-24 sm:pt-28 pb-32 sm:pb-36 lg:pb-40">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 items-end">
+
+          {/* Left — copy */}
+          <div className="flex flex-col gap-4 sm:gap-6 lg:gap-7 pb-8 sm:pb-12 lg:pb-16">
+
+            <div className="flex items-center gap-2 sm:gap-3">
+              <span className="h-px w-8 sm:w-10 bg-brand-teal flex-shrink-0" />
+              <span className="text-brand-teal text-[10px] sm:text-xs uppercase tracking-[0.2em] font-semibold leading-tight">
+                TamaTech Business Solutions
+              </span>
             </div>
 
-            <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05]">
-              Software that scales.{" "}
-              <span className="text-gradient-brand">Compliance that protects.</span>
+            <h1 className="font-display font-bold leading-[0.92]">
+              <span className="block text-[clamp(3rem,9vw,6.5rem)] text-white">Infinite</span>
+              <span
+                className="block text-[clamp(3rem,9vw,6.5rem)]"
+                style={{
+                  background: "linear-gradient(135deg, #3b9fd9, #00BFA5)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Solutions.
+              </span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg text-paper/80 leading-relaxed">
-              TamaTech Business Solutions builds custom software and handles the paperwork that
-              keeps your business legitimate, registered, and audit-ready — all under one roof.
+            <p className="text-white/60 text-sm sm:text-base leading-relaxed max-w-sm">
+              From registering your company to building your software and growing
+              your brand — we handle every step under one roof.
             </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="pt-1">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-accent px-7 py-3.5 text-sm font-semibold text-primary shadow-glow hover:scale-[1.02] transition"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-teal px-6 sm:px-8 py-3 sm:py-4 text-sm font-semibold text-white shadow-glow hover:brightness-110 active:scale-95 transition"
               >
-                Start a project
-                <span aria-hidden>→</span>
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium text-paper/90 hover:bg-white/5 transition"
-              >
-                Explore services
+                Start a project →
               </a>
             </div>
 
-            <dl className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
-              {[
-                { k: "120+", v: "Businesses launched" },
-                { k: "98%", v: "Compliance success" },
-                { k: "24/7", v: "Support coverage" },
-              ].map((s) => (
-                <div key={s.v}>
-                  <dt className="font-display text-3xl font-bold text-gradient-brand">{s.k}</dt>
-                  <dd className="mt-1 text-xs uppercase tracking-wider text-paper/60">{s.v}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
 
-          <div className="lg:col-span-5 relative hidden lg:block">
-            <div className="relative aspect-square rounded-3xl bg-white border border-white/20 shadow-elevated p-10 flex items-center justify-center">
-              <div className="absolute -inset-2 rounded-3xl bg-gradient-accent opacity-20 blur-2xl -z-10" />
-              <img
-                src={logo}
-                alt="TamaTech Business Solutions logo"
-                className="relative w-full h-auto animate-float"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 rounded-2xl border border-white/10 bg-background/90 text-foreground px-5 py-4 shadow-elevated backdrop-blur">
-              <div className="text-xs uppercase tracking-wider text-muted-foreground">ISO-aligned</div>
-              <div className="font-display font-semibold">Secure by design</div>
-            </div>
+          {/* Right — bot (shows above text on mobile via order) */}
+          <div className="flex items-end justify-center order-first lg:order-last">
+            <img
+              src={tamaBot}
+              alt="TamaTech mascot"
+              className="w-[45%] sm:w-[38%] lg:w-full lg:max-w-[500px] h-auto animate-bot"
+            />
           </div>
+
         </div>
+      </div>
+
+      {/* Curved bottom wave */}
+      <div className="absolute bottom-0 left-0 right-0 leading-none pointer-events-none z-0">
+        <svg
+          viewBox="0 0 1440 120"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          className="w-full block"
+          style={{ height: "120px" }}
+        >
+          <path
+            d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z"
+            fill="white"
+          />
+        </svg>
       </div>
     </section>
   );
