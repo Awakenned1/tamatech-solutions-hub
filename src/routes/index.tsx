@@ -8,21 +8,6 @@ import { ContactCTA } from "@/components/ContactCTA";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "TamaTech Business Solutions — Software, Compliance & Registration" },
-      {
-        name: "description",
-        content:
-          "TamaTech builds custom software and handles business compliance and company registration — one partner for tech and regulation.",
-      },
-      { property: "og:title", content: "TamaTech Business Solutions" },
-      {
-        property: "og:description",
-        content: "Software solutions, business compliance, and company registration — under one roof.",
-      },
-    ],
-  }),
   component: Index,
 });
 
